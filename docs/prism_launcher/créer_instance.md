@@ -32,4 +32,4 @@ en haut de la fênetre tu peux modifier le nom dans la zone de text et l'icone e
        
 Après avoir tout sélectioner tu peux cliqué sur le boutton OK ou 1 sur l'image <br>
 le modpack devrait maintenant s'afficher dans le menu principale <br>
-si tu veux le modifier / ajouter des mods tu peux suivre le tuto [modifier un modpack]()
+si tu veux le modifier / ajouter des mods tu peux suivre le tuto [Ajouter des Mods](https://github.com/Hollow-graphic/Python-Project/blob/main/docs/prism_launcher/ajouter_mod.md)
