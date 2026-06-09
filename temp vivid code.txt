@@ -1,0 +1,502 @@
+function create_shatter_list()
+{
+    global.shatter_list = [
+    {
+        song_id: 0,
+        name: "+ERABY+E CONNEC+10N",
+        formatted_name: "+ERABY+E CONNEC+10N",
+        artist: "Camellia",
+        chart_id: "terabyte",
+        audio_id: music_chart_terabytefull,
+        jacket: song_terabyte,
+        preview_id: preview_terabyte,
+        bpm_display: 230,
+        version: "1.0.0",
+        jacket_artist: "Spartan",
+        difficulty_name: "SHATTER",
+        difficulty_number: "-1028",
+        note_designer: "UNKNOWN",
+        ticket_earns: [3, 4, 6],
+        is_original: false
+    }, 
+    {
+        song_id: 1,
+        name: "00 [Shatter]",
+        formatted_name: "00",
+        artist: "garlagan",
+        chart_id: "00",
+        audio_id: music_chart_00,
+        jacket: song_00_af,
+        preview_id: preview_00,
+        bpm_display: 127,
+        version: "2.0.5",
+        jacket_artist: "Lumbud84 vs. Stelli",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "TaroNuke vs. Stelli's Code",
+        ticket_earns: [2, 3, 5],
+        is_original: false
+    }, 
+    {
+        song_id: 2,
+        name: "00 [Slumpage]",
+        formatted_name: "00",
+        artist: "garlagan",
+        chart_id: "00",
+        audio_id: music_chart_00,
+        jacket: song_00_af,
+        preview_id: preview_00,
+        bpm_display: 127,
+        version: "2.0.5",
+        jacket_artist: "Lumbud84 vs. Stelli",
+        difficulty_name: "SLUMPAGE",
+        difficulty_number: "0",
+        note_designer: "TaroNuke vs. Stelli's Code",
+        ticket_earns: [3, 4, 6],
+        is_original: false
+    }, 
+    {
+        song_id: 3,
+        name: "Locked Out",
+        formatted_name: "Locked Out",
+        artist: "C.G.",
+        chart_id: "lockedout",
+        audio_id: music_chart_lockedout,
+        jacket: song_lockedout,
+        preview_id: preview_lockedout,
+        bpm_display: 120,
+        version: "2.2.2",
+        jacket_artist: "Coast Security Systems",
+        difficulty_name: "VANDALIZED",
+        difficulty_number: "8",
+        note_designer: "CL",
+        is_original: false,
+        ticket_earns: [2, 3, 4]
+    }, 
+    {
+        song_id: 4,
+        name: "The River",
+        formatted_name: "The River",
+        artist: "Mother Nature",
+        chart_id: "river",
+        audio_id: music_chart_lockedout,
+        jacket: song_river,
+        preview_id: theriver,
+        bpm_display: 0,
+        version: "2.3.1",
+        jacket_artist: "Earth",
+        difficulty_name: "MORNING",
+        difficulty_number: "8:00 AM",
+        note_designer: "God",
+        goto_room: scene_fishing,
+        is_original: false
+    }, 
+    {
+        song_id: 5,
+        name: "calming patterns to soothe the mind",
+        formatted_name: "calming patterns to soothe the mind",
+        artist: "Lollipop",
+        chart_id: "calming",
+        audio_id: music_chart_calming,
+        jacket: song_calming,
+        preview_id: preview_calming,
+        bpm_display: 158,
+        version: "2.8.1",
+        jacket_artist: "Stelli",
+        difficulty_name: "MIDDLE",
+        difficulty_number: "0+",
+        note_designer: "upsetting stelli to irritate the player",
+        ticket_earns: [5, 8, 999],
+        is_original: false
+    }, 
+    {
+        song_id: 6,
+        name: "grode (DJ HOE SCARER REMIX)",
+        formatted_name: "grode (DJ HOE SCARER REMIX)",
+        artist: "DJ HOE SCARER",
+        chart_id: "grodescarer",
+        audio_id: music_chart_grodescarer,
+        jacket: song_grodescarer,
+        preview_id: preview_grodescarer,
+        bpm_display: 206,
+        version: "3.0.1",
+        jacket_artist: "AriaL & Stelli",
+        difficulty_name: "SHATTER",
+        difficulty_number: "15",
+        note_designer: "DJ STELLI SCARER",
+        ticket_earns: [3, 4, 6],
+        is_original: false
+    }, 
+    {
+        song_id: 7,
+        name: "grode (A-Saph Multigenre Remix)",
+        formatted_name: "grode (A-Saph Multigenre Remix)",
+        artist: "A-Saph",
+        chart_id: "multigrode",
+        audio_id: music_chart_multigrode,
+        jacket: song_multigrode,
+        preview_id: preview_multigrode,
+        bpm_display: 200,
+        version: "3.0.1",
+        jacket_artist: "AriaL & Stelli",
+        difficulty_name: "SHATTER",
+        difficulty_number: "16",
+        note_designer: "Multistelli",
+        ticket_earns: [4, 6, 9],
+        is_original: false
+    }, 
+    {
+        song_id: 8,
+        name: "DeSPAROLA",
+        formatted_name: "DeSPAROLA",
+        artist: "S-Ame",
+        chart_id: "desparola",
+        audio_id: music_chart_desparola,
+        jacket: song_desparola,
+        preview_id: preview_desparola,
+        bpm_display: 224,
+        version: "3.2.2",
+        jacket_artist: "oh god",
+        difficulty_name: "SHATTER",
+        difficulty_number: "16",
+        note_designer: "Stelli as 'kills you'",
+        ticket_earns: [3, 4, 6],
+        is_original: false
+    }, 
+    {
+        song_id: 9,
+        name: "evil pimp dracula fire beat",
+        formatted_name: "evil pimp dracula fire beat",
+        artist: "THE BEAT ALCHEMIST",
+        chart_id: "dracula",
+        audio_id: music_chart_dracula,
+        jacket: song_dracula,
+        preview_id: preview_dracula,
+        bpm_display: 104,
+        version: "3.4.0",
+        jacket_artist: "dracul",
+        difficulty_name: "EVIL",
+        difficulty_number: "17+++",
+        note_designer: "WATCH OUT FOR DRACULA HES IN YOUR ROOM RIGHT NOW AAAAAAH AAAAAAAAAAAAH",
+        ticket_earns: [2, 4, 7],
+        is_original: false
+    }, 
+    {
+        song_id: 10,
+        name: "TVO",
+        formatted_name: "TVO",
+        artist: "?????",
+        chart_id: "tvo",
+        audio_id: music_chart_lockedout,
+        jacket: song_tvo,
+        preview_id: preview_generic,
+        bpm_display: 0,
+        version: "2.4.4",
+        jacket_artist: "?????",
+        difficulty_name: "?????",
+        difficulty_number: "?????",
+        note_designer: "?????",
+        goto_room: scene_tvo,
+        is_original: false
+    }, 
+    {
+        song_id: 11,
+        name: "_",
+        formatted_name: "_",
+        artist: "thiuth",
+        chart_id: "dual",
+        audio_id: music_chart_dual,
+        jacket: song_dual,
+        preview_id: preview_dual,
+        bpm_display: 200,
+        version: "3.3.0",
+        jacket_artist: "_",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "_",
+        ticket_earns: [4, 5, 7],
+        is_original: true,
+        
+        unlock: function()
+        {
+            return global.story_progress >= 22;
+        }
+    }, 
+    {
+        song_id: 12,
+        name: "Memories Sacrifice",
+        formatted_name: "Memories Sacrifice",
+        artist: "OMI",
+        chart_id: "memories",
+        audio_id: music_chart_memories,
+        jacket: song_obscured,
+        preview_id: preview_memories,
+        bpm_display: 161,
+        version: "4.0.0",
+        jacket_artist: " ",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: " ",
+        ticket_earns: [2, 3, 4],
+        is_original: false,
+        
+        unlock: function()
+        {
+            return global.story_progress >= 25;
+        }
+    }, 
+    {
+        song_id: 13,
+        name: "nullbreak",
+        formatted_name: "nullbreak",
+        artist: "vervid!",
+        chart_id: "nullbreak",
+        audio_id: music_chart_nullbreak,
+        jacket: song_nullbreak,
+        preview_id: preview_nullbreak,
+        bpm_display: 228,
+        version: "4.1.0",
+        jacket_artist: "AriaL",
+        difficulty_name: "SHATTER",
+        difficulty_number: "16",
+        note_designer: "TonyKrZa Uncontained",
+        ticket_earns: [3, 4, 6],
+        is_original: true
+    }, 
+    {
+        song_id: 14,
+        name: "NULCTRL EX",
+        formatted_name: "NULCTRL EX",
+        artist: "Silentroom",
+        chart_id: "nulctrlex",
+        audio_id: music_chart_nulctrlex,
+        jacket: song_nulctrl,
+        preview_id: preview_nulctrl,
+        bpm_display: 100,
+        version: "4.1.0",
+        jacket_artist: "AriaL & Stelli",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "DokiNabi",
+        ticket_earns: [2, 3, 5],
+        is_original: false
+    }, 
+    {
+        song_id: 15,
+        name: " acta est fabula, plaudite",
+        formatted_name: "acta est fabula,#plaudite",
+        artist: "Theatrum Aeternum",
+        chart_id: "plauditefull",
+        audio_id: music_chart_plaudite,
+        jacket: song_plaudite,
+        preview_id: preview_plaudite,
+        bpm_display: 200,
+        version: "4.3.0",
+        jacket_artist: "57_dayo",
+        difficulty_name: "SHATTER",
+        difficulty_number: "17",
+        note_designer: "[UNDESIGNATED]",
+        ticket_earns: [6, 8, 15],
+        is_original: true,
+        
+        unlock: function()
+        {
+            return global.story_progress >= 34;
+        }
+    }, 
+    {
+        song_id: 16,
+        name: "RAM (Rotating Auto-Mobiles)",
+        formatted_name: "RAM#(Rotating Auto-Mobiles)",
+        artist: "Dawn of Apples & mentholgrrl",
+        chart_id: "ram",
+        audio_id: music_chart_ram,
+        jacket: song_ram,
+        preview_id: preview_ram,
+        bpm_display: 164,
+        version: "4.3.1",
+        jacket_artist: "car",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "TaroNuke vs. Department of Motor Vehicles",
+        ticket_earns: [3, 4, 6],
+        is_original: false
+    }, 
+    {
+        song_id: 17,
+        name: "Angelstar",
+        formatted_name: "Angelstar",
+        artist: "millexica",
+        chart_id: "angelstar",
+        audio_id: music_chart_angelstar,
+        jacket: song_angelstar,
+        preview_id: preview_angelstar,
+        bpm_display: 186,
+        version: "4.3.3",
+        jacket_artist: "Stelli",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "Intervention",
+        ticket_earns: [2, 3, 5],
+        is_original: false,
+        
+        unlock: function()
+        {
+            return global.story_progress >= 35;
+        }
+    }, 
+    {
+        song_id: 18,
+        name: "∀",
+        formatted_name: "∀",
+        artist: "ああああ",
+        chart_id: "avalon",
+        audio_id: music_chart_avalon,
+        jacket: song_avalon,
+        preview_id: preview_avalon,
+        bpm_display: 245,
+        version: "4.4.0",
+        jacket_artist: "Lumbud84",
+        difficulty_name: "SHATTER",
+        difficulty_number: "15+",
+        note_designer: "Spartan",
+        ticket_earns: [2, 3, 5],
+        is_original: false
+    }, 
+    {
+        song_id: 19,
+        name: "Angelstar / Dark Star",
+        formatted_name: "Angelstar /#Dark Star",
+        artist: "millexica",
+        chart_id: "angelstarplus",
+        audio_id: music_chart_angelstarplus,
+        jacket: song_angelstarplus,
+        preview_id: preview_angelstar,
+        bpm_display: 186,
+        version: "5.2.0",
+        jacket_artist: "Stelli",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "Outervention",
+        ticket_earns: [3, 4, 6],
+        is_original: false,
+        
+        unlock: function()
+        {
+            return global.story_progress >= 37;
+        }
+    }, 
+    {
+        song_id: 20,
+        name: ":D (vivid/stasis edit)",
+        formatted_name: ":D (vivid/stasis edit)",
+        artist: "S-Ame",
+        chart_id: "cd",
+        audio_id: music_chart_cd,
+        jacket: song_cd,
+        preview_id: preview_cd,
+        bpm_display: 176,
+        version: "5.4.0",
+        jacket_artist: "Stelli & A-Saph",
+        difficulty_name: "SHATTER",
+        difficulty_number: "16",
+        note_designer: "The Meme as \"Subpar\"",
+        ticket_earns: [3, 4, 6],
+        is_original: false,
+        
+        unlock: function()
+        {
+            return global.rscore >= 19000;
+        }
+    }, 
+    {
+        song_id: 21,
+        name: "Unsigned Amalgam",
+        formatted_name: "Unsigned Amalgam",
+        artist: "Kyotsugyon",
+        chart_id: "unsigned",
+        audio_id: music_chart_unsigned,
+        jacket: song_unsigned,
+        preview_id: preview_unsigned,
+        bpm_display: -1,
+        version: "6.0.0",
+        jacket_artist: "...",
+        difficulty_name: "SHATTER",
+        difficulty_number: "0",
+        note_designer: "...",
+        ticket_earns: [3, 4, 6],
+        is_original: true,
+        
+        unlock: function()
+        {
+            return get_alpha_story_progress() >= 3;
+        }
+    }, 
+    {
+        song_id: 22,
+        name: "SUPERNOVA ~Life Cycle of a Star~ True Form",
+        formatted_name: "SUPERNOVA ~Life Cycle of a Star~ True Form",
+        artist: "Kyotsugyon",
+        chart_id: "n7full",
+        audio_id: music_chart_n7,
+        jacket: song_n7,
+        preview_id: preview_n7,
+        bpm_display: 252,
+        version: "6.0.0",
+        jacket_artist: "57_dayo",
+        difficulty_name: "SHATTER",
+        difficulty_number: "17+",
+        note_designer: "vs.chartteam(omega+)",
+        ticket_earns: [7, 10, 20],
+        is_original: true,
+        
+        unlock: function()
+        {
+            return get_alpha_story_progress() >= 17;
+        }
+    }];
+    global.shatter_order = [4, 1, 2, 0, 3, 6, 7, 16, 5, 8, 9, 13, 14, 18, 20, 11, 12, 15, 21, 22, 17, 19];
+    
+    if (get_story_progress() == 36)
+        global.shatter_list[17].name = "Angelstar?";
+    
+    if (get_alpha_story_progress() == 3 || get_alpha_story_progress() == 4)
+    {
+        global.shatter_list[21] = 
+        {
+            song_id: 21,
+            name: " ",
+            formatted_name: " ",
+            artist: " ",
+            chart_id: "unsigned",
+            audio_id: music_chart_unsigned,
+            jacket: song_unsigned1,
+            preview_id: computerbuzz,
+            bpm_display: -1,
+            version: "6.0.0",
+            jacket_artist: " ",
+            difficulty_name: " ",
+            difficulty_number: " ",
+            note_designer: " ",
+            ticket_earns: [0, 0, 0],
+            is_original: false,
+            
+            unlock: function()
+            {
+                return get_alpha_story_progress() >= 3;
+            }
+        };
+        global.shatter_order = [21];
+    }
+    
+    for (var i = 0; i < array_length(global.shatter_list); i++)
+    {
+        if (!struct_exists(global.shatter_list[i], "unlock"))
+        {
+            struct_set(global.shatter_list[i], "unlock", function()
+            {
+                return true;
+            });
+        }
+    }
+}

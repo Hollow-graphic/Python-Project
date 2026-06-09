@@ -1,0 +1,52 @@
+<body>
+    <img src="" alt="" class="character" id="character">
+</body>
+
+<style>
+    body {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .character {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(10);
+        image-rendering: pixelated;
+        scale: 2;
+    }
+
+    .float {
+        animation: float 0.5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+    0%   { transform: translate(-50%, -50%) scale(10) scaleX(1.05) scaleY(0.95); }
+    50%  { transform: translate(-50%, -50%) scale(10) scaleX(0.95) scaleY(1.05); }
+    100% { transform: translate(-50%, -50%) scale(10) scaleX(1.05) scaleY(0.95); }
+}
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<script>
+    const is_speaking = true;
+    document.getElementById('character').classList.toggle("float", is_speaking);
+    fetch('character.txt')
+        .then(res => {
+            if (!res.ok) throw new Error('Network response was not ok');
+            return res.text();
+        })
+        .then(text => document.getElementById('character').src = "assets/sp_u_"+text+".png")
+        .catch(err => console.error('Failed to load message.txt:', err));
+    document.getElementById('character').style.display = "block";
+    document.getElementById('character').style.animation = "fade-in 1s lienar";
+</script>

@@ -6,22 +6,29 @@ from datetime import datetime
 app = Flask(__name__, static_folder="web", static_url_path="")
 
 # --- CONFIG ---
-ROR2_SAVE_FILE = r"C:\Users\Adam\AppData\LocalLow\Hopoo Games, LLC\Risk of Rain 2\ProperSave\Saves\9bd28171-08b2-473c-bd8e-0df603743fef.json"
+ROR2_SAVE_FILE = r"C:\Users\Adam\AppData\LocalLow\Hopoo Games, LLC\Risk of Rain 2\ProperSave\Saves\13735ea8-9b5a-4d34-8ab6-f99ce3357c8d.json"
 
 
 # ---------- ENDPOINTS EXISTANTS (inchangés) ----------
 @app.route('/Task/save', methods=['POST'])
 def task_save():
     """Sauvegarde classique (historique)"""
-    data = request.json
+    data = request.json["raconte"]
     date_str = datetime.now().strftime('%Y-%m-%d')
-    save_dir = os.path.join(app.static_folder, 'Task', 'save')
+    save_dir = r"C:\Users\Adam\Desktop\Shortcut\Obsidian\Task"
     os.makedirs(save_dir, exist_ok=True)
-    filename = os.path.join(save_dir, f'{date_str}.json')
+    filename = os.path.join(save_dir, f'{date_str}.md')
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     return jsonify({'status': 'success', 'filename': filename})
 
+@app.route('/localstorage', methods=['GET'])
+def get_local_storage():
+    data = request.json
+    print(data["levels"])
+    file = r"C:\Users\Adam\Desktop\Shortcut\Backup\Celeste_Rando\levels.json"
+    open(file, "w", encoding="utf-8").write(data["levels"])
+    return jsonify({True})
 
 # ---------- NOUVEAUX ENDPOINTS ROR2 ----------
 @app.route('/ror2save/load', methods=['GET'])
@@ -76,6 +83,28 @@ def ror2_save():
 
     return jsonify({"status": "success", "file": ROR2_SAVE_FILE})
 
+@app.route('/YTdownloader/download', methods=['POST', 'OPTIONS'])
+def download_yt_video():
+    if request.method == 'OPTIONS':
+        return '', 200
+    data = request.json
+    os.system(f'C:\\Users\\Adam\\Desktop\\Shortcut\\Tools\\autre\\yt-dlp.exe -o "C:\\Users\\Adam\\Desktop\\Shortcut\\Music\\%(title)s.%(ext)s" {data["url"]}')
+    #remove the .part extention for all file in the download folder
+    download_folder = r"C:\Users\Adam\Desktop\Shortcut\Music"
+    for filename in os.listdir(download_folder):
+        if filename.endswith(".part"):
+            os.rename(os.path.join(download_folder, filename), os.path.join(download_folder, filename[:-5]))
+    return jsonify({"status": "download started"})
+
+@app.route("/save_url", methods=["POST"])
+def save_url():
+    url = request.json.get("url")
+    if url:
+        # Écrit la nouvelle URL en réécrivant le fichier
+        with open("url.txt", "w", encoding="utf-8") as f:
+            f.write(url + "\n")
+        return {"status": "ok", "saved": url}, 200
+    return {"status": "error"}, 400
 
 # ---------- PAGE PRINCIPALE ----------
 @app.route('/')

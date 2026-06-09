@@ -7,6 +7,7 @@ import pyttsx3
 import urllib.request
 import pygame
 import time
+from lib import *
 
 # --- Lecture du token depuis token.txt ---
 with open(r"C:\Users\Adam\Desktop\Shortcut\Tools\autre\token.txt", "r", encoding="utf-8") as f:
@@ -22,8 +23,7 @@ client = discord.Client(intents=intents)
 
 
 Admin = {
-    "hollow_craft",
-    "basil_lique"
+    "hollow_craft"
 }
 #Number to letter
 def ascii(n):
@@ -108,6 +108,7 @@ async def on_message(message):
         print(f"Request from {message.author.name} saved at {name}")
     #Help command
     elif split_message[0] == "help":
+        time.sleep(5)
         text = open(r"C:\Users\Adam\Desktop\Mes Projects\python\discord\help.txt", "r", encoding="utf-8").read()
     #Ping the bot
     elif split_message[0] == "ping":

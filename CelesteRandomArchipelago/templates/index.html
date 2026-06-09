@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Celeste Endless Archipelago</title>
+	<meta name="description" content="Endless Random Celeste Run Tracker" />
+	<link rel="icon" href="./favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+		<link rel="stylesheet" href="{{ url_for('static', filename='static/style.css') }}">
+</head>
+
+<body>
+	<div class="contents">
+		<!--[--><!--[--><!--[--><!--[--><!--[--><!--[--><!--]!--> <main class="flex items-center flex-col max-w-screen-lg mx-auto p-8"><!--[-->
+      <div class="flex gap-4 items-center mb-4"><svg width="60" height="60" viewBox="0 0 60 60"><g fill="#fff">
+        <path d="M6.14,18.04v6.4c0,2.15-.94,3.85-2.71,3.85h-.41v3.43h.41c1.77,0,2.71,1.69,2.71,3.85v6.4c0,3.83,2.68,5.27,4.33,5.27h3.2v-3.16h-2.27c-.88,0-1.37-.83-1.37-1.79v-7.53c0-3.8-2.59-4.74-2.59-4.74,0,0,2.59-.95,2.59-4.74v-7.53c0-.96,.49-1.79,1.37-1.79h2.27v-3.16h-3.2c-1.65,0-4.33,1.44-4.33,5.27Z">
+        </path><path d="M56.57,28.29c-1.77,0-2.71-1.69-2.71-3.85v-6.4c0-3.83-2.68-5.27-4.33-5.27h-3.2v3.16h2.27c.88,0,1.37,.83,1.37,1.79v7.53c0,3.8,2.59,4.74,2.59,4.74,0,0-2.59,.95-2.59,4.74v7.53c0,.96-.49,1.79-1.37,1.79h-2.27v3.16h3.2c1.65,0,4.33-1.44,4.33-5.27v-6.4c0-2.15,.94-3.85,2.71-3.85h.41v-3.43h-.41Z">
+        </path><path d="M30,16.03c-7.74,0-13.09,5.78-13.09,13.97s5.34,13.97,13.09,13.97,13.09-5.78,13.09-13.97-5.34-13.97-13.09-13.97Zm0,24.01c-5.19,0-8.6-3.99-8.6-10.04s3.41-10.04,8.6-10.04,8.6,3.99,8.6,10.04-3.41,10.04-8.6,10.04Z"></path></g></svg> 
+        <div><p class="text-2xl font-bold">Celeste Endless Map Randomizer Archipelago</p> 
+          <p class="text-xs text-zinc-300">by Hollow-graphic, using <a class="underline" href="https://maddie480.ovh/">Maddie's random map API</a><br> and <a class="underline" href="https://celeste-endless.ottomated.net">Ottomated Celeste Endless Map Randomizer</a></p></div>
+        </div><!--]--> 
+          <label>Start with skips: <select class="bg-zinc-700 px-2 py-1"><!--[--><!--[-->
+          <option value="0">0</option><!--]--><!--[--><option value="1">1</option><!--]--><!--[--><option value="2">2</option><!--]--><!--[-->
+          <option value="3">3</option><!--]--><!--[--><option value="4">4</option><!--]--><!--[--><option value="5">5</option><!--]--><!--[-->
+          <option value="6">6</option><!--]--><!--[--><option value="7">7</option><!--]--><!--[--><option value="8">8</option><!--]--><!--[-->
+          <option value="9">9</option><!--]--><!--[--><option value="10">10</option><!--]--><!--]--></select></label> 
+          <input type="text" class="" id="APIP" placeholder="IP:port" autocomplete="off">
+          <input type="text" class="" id="APSlot" placeholder="SlotName" autocomplete="off">
+          <input type="text" class="" id="APPassword" placeholder="Password" autocomplete="off">
+          <button class="btn mt-2">Begin</button> <!--[--><!--]!--> <!--[--><!--]--> <!--[--><!--]!--> 
+          <div class="h-[300px]"></div></main><!--]--><!--]--><!--]--><!--]--> <!--[--><!--]!--><!--]-->
+			<script>
+				{
+					__sveltekit_x4jza0 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("https://celeste-endless.ottomated.net/_app/immutable/entry/start.DmQdn-5o.js"),
+						import("https://celeste-endless.ottomated.net/_app/immutable/entry/app.Cw3MPhlp.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+	</div>
+<script src="{{ url_for('static', filename='static/script.js') }}"></script>
+</body>
+
+</html>

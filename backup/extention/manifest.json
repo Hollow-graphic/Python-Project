@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "URL Saver to Python",
   "version": "1.0",
-  "description": "Télécharge des Vidéo",
+  "description": "Envoie l'URL courante à un script Python",
   "permissions": ["tabs", "activeTab"],
   "background": {
     "service_worker": "background.js"

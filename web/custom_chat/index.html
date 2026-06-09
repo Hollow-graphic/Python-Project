@@ -1,0 +1,163 @@
+<body>
+  <div id="textbox" class="textbox">
+    <div id="colorgrade" class="colorgrade"></div>
+    <img src="assets/sp_dialogue.png" alt="Description" class="dialogue" id="dialogue">
+    <div id="message" class="message"></div>
+    <div id="namebox" class="namebox">
+      <img src="assets/sp_namebox_new.png" alt="Description" class="namebox_slope" id="namebox_slope">
+      <div id="username" class="username"></div>
+    </div>
+  </div>
+</body>
+<style>
+  body {
+    background-color: rgba(156, 156, 156, 0);
+  }
+
+  @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+  }
+
+  .char {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-image: url("assets/fnt_monacovs.png");
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    transform-origin: top left;
+    margin-right: 0;
+  }
+
+  .dialogue {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    scale: 10;
+    image-rendering: pixelated;
+  }
+
+  .namebox {
+    background-color: black;
+    position: absolute;
+    bottom: 290px;
+    left: -10px;
+    width: 200px;
+    height: 25px;
+  }
+
+  .namebox_slope {
+    position: absolute;
+    left: 600px;
+    bottom: 95px;
+    scale: 8;
+    image-rendering: pixelated;
+  }
+
+  .username {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .colorgrade {
+    position: absolute;
+    bottom: 240px;
+    left: -10px;
+    width: 101%;
+    height: 50px;
+  }
+
+  .message {
+    position: absolute;
+    bottom: 195px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    row-gap: 32px;
+    max-width: calc(47 * 8px * 5.5);
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+</style>
+<script>
+  const chars = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789., :()/!&_ç?"%$#~-|{}+>=<[]@'`;
+  const char_scale = 5.5;
+
+  fetch('color.txt')
+    .then(res => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.text();
+    })
+    .then(text => {
+      const [color1, color2] = text.trim().split(", ");
+      document.getElementById("colorgrade").style.backgroundImage =
+        `linear-gradient(to right, ${color1}, ${color2})`;
+    })
+    .catch(err => console.error('Failed to load color.txt:', err));
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async function renderText(text, containerId, delay = 0) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+
+    for (const c of text) {
+      const i = chars.indexOf(c);
+      if (i === -1) continue;
+
+      const span = document.createElement("span");
+      span.className = "char";
+      span.style.backgroundPosition = `-${(i % 16) * 8}px -${Math.floor(i / 16) * 12}px`;
+      span.style.transform = `scale(${char_scale})`;
+      span.style.marginRight = char_scale * 8 - 16 + "px";
+      container.appendChild(span);
+
+      if (delay > 0) {
+        await sleep(delay);
+      }
+    }
+  }
+
+  fetch('username.txt')
+    .then(res => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.text();
+    })
+    .then(text => {
+      renderText("  " + text, "username");
+
+      document.getElementById('namebox_slope').style.scale = char_scale;
+      document.getElementById('namebox').style.height = 65 * (char_scale / 8) + 'px';
+      document.getElementById('namebox_slope').style.bottom = 1 + ((char_scale - 4) / 4 * 33) + 'px';
+      document.getElementById('username').style.bottom = -27 + (char_scale / 4 * 50) + "px";
+      console.log(document.getElementById('username').style.bottom);
+
+      message_width = (text.length + 4);
+      document.getElementById('namebox').style.width = message_width * 32 * (char_scale / 4) + 16 + 'px';
+      document.getElementById('namebox_slope').style.left = (message_width * 32 * (char_scale / 4) + 16 + 18) + 'px';
+    })
+    .catch(err => console.error('Failed to load username.txt:', err));
+  
+  fetch('message.txt')
+    .then(res => {
+      if (!res.ok) throw new Error('Network response was not ok');
+      return res.text();
+    })
+    .then(async text => {
+      text = text.replace(/^\uFEFF/, "").replace(/^\s+/, "");
+      await renderText(text, "message", 50); // 50ms entre chaque caractère
+    })
+    .catch(err => console.error('Failed to load message.txt:', err));
+</script>
