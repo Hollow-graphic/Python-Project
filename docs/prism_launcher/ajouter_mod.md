@@ -16,10 +16,11 @@ puis "vérifié et confirmé" et "OK" <br>
 # List des mods 
 | Recommandé             | Loader         | Versions            |
 |------------------------|----------------|---------------------|
+| JEI (Just Enough Item) | Fabric / Forge | 26.1.2 - 1.12.2     |
 | Minecraft Comes Alive  | Fabric / Forge | 1.21.1 - 1.16.5     |
 | Rats                   | Forge          | 1.20.1 - 1.12.2     |
-| Sophisticated Backpack | Forge / Fabric | 26.1.2 - 16.5       |
-| Minecells              | Fabric         | 1.21.1 - 19.2       |
+| Sophisticated Backpack | Forge / Fabric | 26.1.2 - 1.16.5     |
+| Minecells              | Fabric         | 1.21.1 - 1.19.2     |
 | Relics                 | Forge          | 1.21.1 - 16.5       |
 | Ars Nouveau            | Forge          | 1.21.1 - 1.15.2     |
 
