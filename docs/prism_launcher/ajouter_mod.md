@@ -24,10 +24,10 @@ puis "vérifié et confirmé" et "OK" <br>
 | Ars Nouveau            | Forge          | 1.21.1 - 1.15.2     |
 
 # Mods pour joué à la mannette 
-| Recommandé                               | Loader         | Versions            |
-|------------------------------------------|----------------|---------------------|
-| Controllable                             | Fabric / Forge | 26.2.1 - 1.12.2     |
-| MidnightControls (si l'autre marche pas) | Fabric / Forge | 26.2.1 - 1.18.2     |
+| Recommandé                               | Loader            | Versions            |
+|------------------------------------------|-------------------|---------------------|
+| Controllable                             | Fabric / Forge    | 26.2.1 - 1.12.2     |
+| MidnightControls (si l'autre marche pas) | Fabric / NeoForge | 26.2.1 - 1.18.2     |
 
 | Optimisation                     |
 |----------------------------------|
