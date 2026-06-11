@@ -21,7 +21,7 @@ puis "vérifié et confirmé" et "OK" <br>
 | Rats                   | Forge          | 1.20.1 - 1.12.2 |                       |
 | Sophisticated Backpack | Forge / Fabric | 26.1.2 - 1.16.5 |                       |
 | Minecells              | Fabric         | 1.21.1 - 1.19.2 |                       |
-| Relics                 | Forge          | 1.21.1 - 16.5   |                       |
+| Relics                 | Forge          | 1.21.1 - 1.16.5 |                       |
 | Ars Nouveau            | Forge          | 1.21.1 - 1.15.2 |                       |
 | Create                 | Forge / Fabric | 1.21.1 - 1.14.4 |                       |
 | Tinkers Construct      | Forge          | 1.20.1 - 1.6.2  |                       |
@@ -32,29 +32,29 @@ puis "vérifié et confirmé" et "OK" <br>
 | Supplementaries        | Forge / fabric | 1.21.1 - 1.15.2 | ajoute plein de petit item |
 | FTB Ultimine           | Forge / fabric | 1.21.1 - 1.12.2 |                       |
 | Mystical Agriculture   | Forge          | 26.1.2 - 1.10.2 | Conseil ajouter squat grow pour facilité|
-| Enhanced Celestials    | Forge          |                 | Ajoute les blood, blue et harvest moon|
-| Nature Compass         |                |                 |                       |
-| Exploration Compass    |                |                 |                       |
+| Nature Compass         | Forge / fabric | 26.1.2 - 1.7.10 |                       |
+| Explorer's Compass     | Forge / fabric | 26.1.2 - 1.16.5 |                       |
 | Farmer's Delight       |                |                 |                       |
 | Paraglider             |                |                 |                       |
 
 # Autre Mods 
-| Recommandé             | Loader         | Versions            | Info Supplementaire   |
-|------------------------|----------------|---------------------|-----------------------|
+| Recommandé             | Loader         | Versions        | Info Supplementaire   |
+|------------------------|----------------|-----------------|-----------------------|
 | Essential Mod          | Forge / fabric | 26.2.1 - 1.8.9 ||
 | Controllable           | Forge / fabric | 26.2.1 - 1.12.2 ||
 | MidnightControls (si l'autre marche pas)| Fabric / NeoForge | 26.2.1 - 1.18.2 ||
-| Sinytra Connector (mod fabric sur forge)| Forge          | 1.21.1 - 1.20.1     ||
-| Lootr                  |                |                     ||
+| Sinytra Connector (mod fabric sur forge)| Forge          | 1.21.1 - 1.20.1 ||
+| Lootr                  | Forge / fabric | 26.2.1 - 1.12.2 ||
 | FTB Quest              |                |                     ||
 
 # Mods sympa 
-| Recommandé             | Loader         | Versions            | Info Supplementaire   |
-|------------------------|----------------|---------------------|-----------------------|
-| Integrated Dynamics    | Forge          |                     |                       |
+| Recommandé             | Loader         | Versions        | Info Supplementaire   |
+|------------------------|----------------|-----------------|-----------------------|
+| Integrated Dynamics    | Forge          |                     ||
 | Occultism              |                |                     ||
-| Ribbits                | Forge / fabric |                     ||
+| Ribbits                | Forge / fabric | 1.21.1 - 1.20.1 ||
 | Eidolon : Repraised    | Forge          | 1.21.1 - 1.16.5 | Ajoute la table d'enchantement infinit|
+| Enhanced Celestials    | Forge / fabric | 1.21.1 - 1.16.5 | Ajoute les blood, blue et harvest moon|
 
 | Optimisation                     |
 |----------------------------------|
