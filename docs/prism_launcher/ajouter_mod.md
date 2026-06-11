@@ -14,21 +14,47 @@ tu as juste a double clicker sur les mods que tu veux installer <br>
 puis "vérifié et confirmé" et "OK" <br>
 
 # List des mods 
-| Recommandé             | Loader         | Versions            |
-|------------------------|----------------|---------------------|
-| JEI (Just Enough Item) | Fabric / Forge | 26.1.2 - 1.12.2     |
-| Minecraft Comes Alive  | Fabric / Forge | 1.21.1 - 1.16.5     |
-| Rats                   | Forge          | 1.20.1 - 1.12.2     |
-| Sophisticated Backpack | Forge / Fabric | 26.1.2 - 1.16.5     |
-| Minecells              | Fabric         | 1.21.1 - 1.19.2     |
-| Relics                 | Forge          | 1.21.1 - 16.5       |
-| Ars Nouveau            | Forge          | 1.21.1 - 1.15.2     |
+| Recommandé             | Loader         | Versions        | Info Supplementaire   |
+|------------------------|----------------|-----------------|-----------------------|
+| JEI (Just Enough Item) | Fabric / Forge | 26.1.2 - 1.12.2 | Obligatore            |
+| Minecraft Comes Alive  | Fabric / Forge | 1.21.1 - 1.16.5 |                       |
+| Rats                   | Forge          | 1.20.1 - 1.12.2 |                       |
+| Sophisticated Backpack | Forge / Fabric | 26.1.2 - 1.16.5 |                       |
+| Minecells              | Fabric         | 1.21.1 - 1.19.2 |                       |
+| Relics                 | Forge          | 1.21.1 - 16.5   |                       |
+| Ars Nouveau            | Forge          | 1.21.1 - 1.15.2 |                       |
+| Create                 | Forge / Fabric | 1.21.1 - 1.14.4 |                       |
+| Tinkers Construct      | Forge          | 1.20.1 - 1.6.2  |                       |
+| Waystones              | Forge / Fabric | 26.1.2 - 1.7.10 |                       |
+| Xaero's Minimap        | Forge / fabric | 26.1.2 - 1.7.10 |                       |
+| Jade                   |                |                 | Affiche le block que tu regard en haut|
+| Pipez                  | Forge          | 26.1.2 - 1.16.5 | Mod des câbles         |
+| Supplementaries        | Forge / fabric | 1.21.1 - 1.15.2 | ajoute plein de petit item |
+| FTB Ultimine           | Forge / fabric | 1.21.1 - 1.12.2 |                       |
+| Mystical Agriculture   | Forge          | 26.1.2 - 1.10.2 | Conseil ajouter squat grow pour facilité|
+| Enhanced Celestials    | Forge          |                 | Ajoute les blood, blue et harvest moon|
+| Nature Compass         |                |                 |                       |
+| Exploration Compass    |                |                 |                       |
+| Farmer's Delight       |                |                 |                       |
+| Paraglider             |                |                 |                       |
 
-# Mods pour joué à la mannette 
-| Recommandé                               | Loader            | Versions            |
-|------------------------------------------|-------------------|---------------------|
-| Controllable                             | Fabric / Forge    | 26.2.1 - 1.12.2     |
-| MidnightControls (si l'autre marche pas) | Fabric / NeoForge | 26.2.1 - 1.18.2     |
+# Autre Mods 
+| Recommandé             | Loader         | Versions            | Info Supplementaire   |
+|------------------------|----------------|---------------------|-----------------------|
+| Essential Mod          | Forge / fabric | 26.2.1 - 1.8.9 ||
+| Controllable           | Forge / fabric | 26.2.1 - 1.12.2 ||
+| MidnightControls (si l'autre marche pas)| Fabric / NeoForge | 26.2.1 - 1.18.2 ||
+| Sinytra Connector (mod fabric sur forge)| Forge          | 1.21.1 - 1.20.1     ||
+| Lootr                  |                |                     ||
+| FTB Quest              |                |                     ||
+
+# Mods sympa 
+| Recommandé             | Loader         | Versions            | Info Supplementaire   |
+|------------------------|----------------|---------------------|-----------------------|
+| Integrated Dynamics    | Forge          |                     |                       |
+| Occultism              |                |                     ||
+| Ribbits                | Forge / fabric |                     ||
+| Eidolon : Repraised    | Forge          | 1.21.1 - 1.16.5 | Ajoute la table d'enchantement infinit|
 
 | Optimisation                     |
 |----------------------------------|
