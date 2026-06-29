@@ -8,7 +8,6 @@ app = Flask(__name__, static_folder="web", static_url_path="")
 # --- CONFIG ---
 ROR2_SAVE_FILE = r"C:\Users\Adam\AppData\LocalLow\Hopoo Games, LLC\Risk of Rain 2\ProperSave\Saves\13735ea8-9b5a-4d34-8ab6-f99ce3357c8d.json"
 
-
 # ---------- ENDPOINTS EXISTANTS (inchangés) ----------
 @app.route('/Task/save', methods=['POST'])
 def task_save():

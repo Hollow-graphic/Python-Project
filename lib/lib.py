@@ -105,3 +105,14 @@ def obs_hide(obs_client, scene, item_id, toggle=False):
 def string_split(string, separator=" "):
     return string.split(separator)
 #////////////////////////////#
+def ollama_send_message(MODEL, message):
+    import ollama
+    try:
+        response = ollama.chat(model=MODEL, messages=[{"role": "user", "content": message}])
+        if "message" in response and "content" in response["message"]:
+            return response["message"]["content"]
+        else:
+            return str(response)
+    except Exception as e:
+        print(f"An error occurred while sending message to Ollama: {e}")
+        return None
