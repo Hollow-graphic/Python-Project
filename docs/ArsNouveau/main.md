@@ -5,6 +5,10 @@ __Tree & Archwood:__ <br>
 __Essence:__ <br>
 peut être craft avec un Imbuement Chamber
 
+la Air Essence a besoin de Widen Wing qui est donné en tuant des Wilden Stalker (voir rituel)
+la Conjugartion Essence a besoin de Widen Horn qui est donné en tuant des Wilden Hunter (voir rituel)
+et de Starbuncle Token qui est récupéré en donnant une pépite d'or a un Starbuncles qui spawn naturellement (sorte d'écureuil)
+
 # Machine
 __Imbuement Chamber:__ <br>
 Cette machine sert généré des Source Gem
@@ -16,10 +20,10 @@ tout les craft prenne du temps a ce faire mais peut être accéléré en placant
 
 __Enchanting Apparatu:__ <br>
 Besoin d'un diamond pour être craft
-sert a faire des rituel plus complex
+sert a faire des crafts plus complex
 
 doit être placé au dessus d'un Arcane Core et entouré de Arcane Pedestal
-certain rituel demande de la Source pour être lancer
+certain craft demande de la Source pour être lancer
 
 # Source
 __Stocker et déplacement:__ <br>
@@ -40,6 +44,13 @@ Mycelial Sourcelink: Génère en consomment de la nourriture sur un pedestal a c
 Vitalic Sourcelink: Génère quand un mob meurt à côté. Génère aussi quand des animaux reproduise
 Alchemical Sourcelink: Génère grâce au potions mais est beaucoup trop complexe
 
+# Rituel
+__Lancer des rituels:__
+pour lancer un rituel il faut placer une Tablet sur un Ritual Brazier
 
+__Wilden Tribute:__
+cette item est drop par le boss Wilden Chimera qui spawn grace au rituel de Summon Wilden améliorer
+le rituel de base fait apparaitre les trois mob hostile du mod, le Wilden Stalker, le Wilden Hunter et le Wilden Defenders
 
-
+mais si après avoir placé la tablet sur le Ritual Brazier,
+un Wilden Horn, un Wilden Spike, un Wilden wing est jetée sur la tablette. le rituel sera améiolrer
