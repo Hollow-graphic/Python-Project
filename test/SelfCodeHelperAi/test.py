@@ -5,7 +5,7 @@ import os
 import ollama
 
 MODEL = "gemma3:1b"  # Same model as before, keep it consistent.
-FILE_NAME = "C:\Users\Adam\Desktop\Mes Projects\python\test\SelfCodeHelperAi\main.py"  # NEVER CHANGE THIS LINE
+FILE_NAME = r"C:\Users\Adam\Desktop\Mes Projects\python\test\SelfCodeHelperAi\main.py"  # NEVER CHANGE THIS LINE
 
 def load_code(filename):
     """Loads the code from a file.  Handles potential errors."""
@@ -70,13 +70,10 @@ def chat_with_assistant(prompt):
 def main():
     """Main function to orchestrate the process."""
     code = load_code(FILE_NAME)
+    chat_with_assistant(code)
     if code:
         if analyze_code(code):
             print("Code is OK!")
-            if "Bug detected" in content:
-                print("Bug detected!  Please review the error messages.")
-            else:
-                print("Code is fine.")
 
             # Example of saving the code
             save_code(code, FILE_NAME)

@@ -1,94 +1,80 @@
 [
     "",
-    "{\"Mappers\":[[\"NoahCrawfish\",\"\",2718177,\"\"],[\"don_juant\",\"\",2745322,\"\"],[\"Crispybag\",\"\",2943653,\"\"]],\"Deco\\/Art\":[[\"Crispybag\",\"\",2943653,\"\"]],\"Music\":[[\"SM64\",\"\",0,\"https:\\/\\/www.youtube.com\\/watch?v=fMb-WH2UYi0\"]]}",
+    "{\"Key Authors\":[[\"ridg\",\"\\\"Cartographer\\\" I remember someone once suggested renaming the mapper role to that.\",1764672,\"\"],[\"PotatoLucy\",\"Artist, Playtester, etc.\",1774829,\"\"],[\"Sheena\",\"The song in question:\",0,\"https:\\/\\/www.youtube.com\\/watch?v=shw8fXrKtXw&list=PLnMZ1ymt2vGRSmqdRzGHfW2kmzQEo76hd&index=26\"]],\"Not-Key Authors\":[[\"Nyan and Touhoe\",\"Heroes of my story.\",0,\"\"]]}",
     "Collab/Contest",
     6803,
     0,
     "true",
     [
         [
-            "NoahCrawfish",
-            "",
-            2718177,
+            "ridg",
+            "\"Cartographer\" I remember someone once suggested renaming the mapper role to that.",
+            1764672,
             ""
         ],
         [
-            "don_juant",
-            "",
-            2745322,
+            "PotatoLucy",
+            "Artist, Playtester, etc.",
+            1774829,
             ""
         ],
         [
-            "Crispybag",
-            "",
-            2943653,
-            ""
-        ],
-        [
-            "Crispybag",
-            "",
-            2943653,
-            ""
-        ],
-        [
-            "SM64",
-            "",
+            "Sheena",
+            "The song in question:",
             0,
-            "https://www.youtube.com/watch?v=fMb-WH2UYi0"
+            "https://www.youtube.com/watch?v=shw8fXrKtXw&list=PLnMZ1ymt2vGRSmqdRzGHfW2kmzQEo76hd&index=26"
+        ],
+        [
+            "Nyan and Touhoe",
+            "Heroes of my story.",
+            0,
+            ""
         ]
     ],
     {
-        "Mappers": [
+        "Key Authors": [
             [
-                "NoahCrawfish",
-                "",
-                2718177,
+                "ridg",
+                "\"Cartographer\" I remember someone once suggested renaming the mapper role to that.",
+                1764672,
                 ""
             ],
             [
-                "don_juant",
-                "",
-                2745322,
+                "PotatoLucy",
+                "Artist, Playtester, etc.",
+                1774829,
                 ""
             ],
             [
-                "Crispybag",
-                "",
-                2943653,
-                ""
-            ]
-        ],
-        "Deco/Art": [
-            [
-                "Crispybag",
-                "",
-                2943653,
-                ""
-            ]
-        ],
-        "Music": [
-            [
-                "SM64",
-                "",
+                "Sheena",
+                "The song in question:",
                 0,
-                "https://www.youtube.com/watch?v=fMb-WH2UYi0"
+                "https://www.youtube.com/watch?v=shw8fXrKtXw&list=PLnMZ1ymt2vGRSmqdRzGHfW2kmzQEo76hd&index=26"
+            ]
+        ],
+        "Not-Key Authors": [
+            [
+                "Nyan and Touhoe",
+                "Heroes of my story.",
+                0,
+                ""
             ]
         ]
     },
-    "NoahCrawfish don_juant Crispybag Crispybag SM64",
-    1731294095,
-    "Mossy Crawverns?!",
-    153,
+    "ridg PotatoLucy Sheena Nyan and Touhoe",
+    1746489270,
+    "I'm not putting '(2021 Remastering For Grand Espoir)', as I don't even know what that is.",
+    135,
     "",
     {
-        "1320540": {
-            "_idRow": 1320540,
-            "_sFile": "crispycrawvernjaunt_b8158.zip",
-            "_nFilesize": 3862217,
-            "_tsDateAdded": 1731385667,
-            "_nDownloadCount": 119,
-            "_sDownloadUrl": "https://gamebanana.com/dl/1320540",
-            "_sMd5Checksum": "f8fdf488d73d6b8ac755e92ea959d6bc",
+        "1437729": {
+            "_idRow": 1437729,
+            "_sFile": "rokuroku_fin.zip",
+            "_nFilesize": 12366716,
+            "_tsDateAdded": 1747003895,
+            "_nDownloadCount": 73,
+            "_sDownloadUrl": "https://gamebanana.com/dl/1437729",
+            "_sMd5Checksum": "6a18ff48355acb5d8b4259468c952327",
             "_sAnalysisState": "done",
             "_sAnalysisResult": "ok",
             "_sAnalysisResultVerbose": "File passed preliminary analysis",
@@ -96,9 +82,54 @@
             "_sAvResult": "clean",
             "_bIsArchived": false,
             "_bHasContents": true,
+            "_sDescription": "upd. ver. 3 - the last one (trvst)",
             "_aAnalysisWarnings": {
                 "contains_exe": [
-                    "Maps/CrispyCrawvernJaunt/crispydonfish/CrispyCrawvernJaunt.bin"
+                    "Maps/ridg/theno5/chanel.bin"
+                ]
+            }
+        },
+        "1437489": {
+            "_idRow": 1437489,
+            "_sFile": "rokuroku_alt.zip",
+            "_nFilesize": 12366839,
+            "_tsDateAdded": 1746981009,
+            "_nDownloadCount": 21,
+            "_sDownloadUrl": "https://gamebanana.com/dl/1437489",
+            "_sMd5Checksum": "573007763054d20623cc13efeda21076",
+            "_sAnalysisState": "done",
+            "_sAnalysisResult": "ok",
+            "_sAnalysisResultVerbose": "File passed preliminary analysis",
+            "_sAvState": "done",
+            "_sAvResult": "clean",
+            "_bIsArchived": false,
+            "_bHasContents": true,
+            "_sDescription": "upd. ver. 2",
+            "_aAnalysisWarnings": {
+                "contains_exe": [
+                    "Maps/ridg/theno5/chanel.bin"
+                ]
+            }
+        },
+        "1434155": {
+            "_idRow": 1434155,
+            "_sFile": "rokuroku.zip",
+            "_nFilesize": 12379550,
+            "_tsDateAdded": 1746489203,
+            "_nDownloadCount": 38,
+            "_sDownloadUrl": "https://gamebanana.com/dl/1434155",
+            "_sMd5Checksum": "bf8fe37918a932a9157b5ff8c83c4cc7",
+            "_sAnalysisState": "done",
+            "_sAnalysisResult": "ok",
+            "_sAnalysisResultVerbose": "File passed preliminary analysis",
+            "_sAvState": "done",
+            "_sAvResult": "clean",
+            "_bIsArchived": false,
+            "_bHasContents": true,
+            "_sDescription": "12mb Jesus Christ my apologies.",
+            "_aAnalysisWarnings": {
+                "contains_exe": [
+                    "Maps/ridg/theno5/chanel.bin"
                 ]
             }
         }
@@ -106,43 +137,117 @@
     "Celeste",
     "",
     "false",
-    1739426053,
-    1901655,
-    9,
-    1744831067,
+    1749820207,
+    1806813,
+    6,
+    1750888900,
     "",
-    "Crispy Crawvern Jaun't",
+    "Chanel No.5 No On The Rock",
     false,
     "",
-    "NoahCrawfish",
-    6,
-    1901655,
-    "<p><span>Hey I know these guys! Crispybag understood the assignment and the other two submitted an assignment for a completely different class but all the screens were indeed bangers. Like I asked for a mcdouble and got a5 wagyu steak medium rare and i can’t complain but also I can’t wolf it down in one bite and rub my incel belly in such a restaurant unfortunately. Crispybag’s room was a great intro and made me smile a decent amount with its classically clean setups. Don’s room was prolly my favorite; it had such weird interactions and it was really fun to route despite not being balanced or jaunty at all. Noah’s room was also quite incredible to route with the most epic / quirked up dashless gameplay. Also even though it’s green gm+1, surprisingly well-balanced with the mostly wholesome backtrack. The deco is definitely a top contender; it feels very lush but not completely suffocating you with leaves thanks to the lack of bgtiles. I’m on a plane right now and I am going to slice this one baby’s head off. This map did a lot of cool things with the strictly horizontal screen progression; the use of teleporting and backtracking in the latter 2 rooms were both really impressive. However, I don’t need to tell you why this isn’t jaunty at all. Keep up the epic work tho ????</span></p>",
-    1739426053,
-    6,
-    "https://gamebanana.com/mods/embeddables/554942?variant=sd_image",
-    "https://images.gamebanana.com/img/ss/mods/220-90_6731730fc40cb.jpg",
+    "ridg",
+    1,
+    1806813,
+    "<p>I'm not quite sure I understood this map the way I was meant to. I'm not sure I was doing the gameplay wrong or it ended up being too open. Not sure. I don't really think the gameplay fit the song at all and the visuals could have fit more, but they do fit a decent bit. I liked the lighthouse. The gameplay was fun but felt directionless at times. Sometimes I could skip a lot of stuff and it felt really weird in a map like this. I'm also not sure if this is advanced? I did a good amount of weird spike stuff, not sure. I did enjoy the map overall, thanks for entering!</p>",
+    1749820207,
+    1,
+    "https://gamebanana.com/mods/embeddables/592773?variant=sd_image",
+    "https://images.gamebanana.com/img/ss/mods/220-90_6820c9106a378.jpg",
     6800,
     "Maps",
-    "[{\"_sCaption\":\"\",\"_sFile\":\"6731730fc40cb.jpg\",\"_nFilesize\":236281,\"_sFile220\":\"220-90_6731730fc40cb.jpg\",\"_hFile220\":124,\"_wFile220\":220,\"_sFile530\":\"530-90_6731730fc40cb.jpg\",\"_hFile530\":298,\"_wFile530\":530,\"_sFile100\":\"100-90_6731730fc40cb.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"\",\"_sFile\":\"6731730fdc7c7.jpg\",\"_nFilesize\":452367,\"_sFile100\":\"100-90_6731730fdc7c7.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"\",\"_sFile\":\"6731730fefbd9.jpg\",\"_nFilesize\":487926,\"_sFile100\":\"100-90_6731730fefbd9.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"\",\"_sFile\":\"6731730ff3806.jpg\",\"_nFilesize\":561466,\"_sFile100\":\"100-90_6731730ff3806.jpg\",\"_hFile100\":56,\"_wFile100\":100}]",
+    "[{\"_sCaption\":\"\",\"_sFile\":\"6820c9106a378.jpg\",\"_nFilesize\":281234,\"_sFile220\":\"220-90_6820c9106a378.jpg\",\"_hFile220\":124,\"_wFile220\":220,\"_sFile530\":\"530-90_6820c9106a378.jpg\",\"_hFile530\":298,\"_wFile530\":530,\"_sFile100\":\"100-90_6820c9106a378.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"a \\\"ridg\\\" classic\",\"_sFile\":\"6820c6fd9072e.jpg\",\"_nFilesize\":263516,\"_sFile100\":\"100-90_6820c6fd9072e.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"inspired by 'gameplay'\",\"_sFile\":\"6820c77cc21da.jpg\",\"_nFilesize\":204280,\"_sFile100\":\"100-90_6820c77cc21da.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"special thanks to PotatoLucy\",\"_sFile\":\"6820c7849e7c3.jpg\",\"_nFilesize\":182237,\"_sFile100\":\"100-90_6820c7849e7c3.jpg\",\"_hFile100\":56,\"_wFile100\":100},{\"_sCaption\":\"here, have a really bad jpg\",\"_sFile\":\"6820c794d892f.jpg\",\"_nFilesize\":50905,\"_sFile100\":\"100-90_6820c794d892f.jpg\",\"_hFile100\":56,\"_wFile100\":100}]",
     0,
-    "This is a collaborative map between myself, <a href=\"https://gamebanana.com/members/2745322\">Don Juan't</a>, and <a href=\"https://gamebanana.com/members/2943653\">Crispybag</a> for <a href=\"https://gamebanana.com/jams/143\">3 Room Jaunt Contest</a>! We each made one room with some incredibly wacky mechanics. Strap in for some damp cavern gameplay and have fun!<br><br>Grandexpert difficulty.",
+    "<del>You know the deal. I'll be writing this soon. It's a Celeste(tm) map with rooms and gameplay.</del><br>Anyways... Uploading five minutes before the deadline is bad for my heart, I'm getting older I think.<br><hr><i>(warning: profanities ahead, and a glimpse into my batshit insane mind)<br></i>The past month I've been working a whole lot for my internship (dox me, I'm bored), and especially long days 'till past midnight sometimes, because of its nature. I struggled with finding time, and only really started halfway through the contest.<br>Some of the rooms are scuffed because I sketched them first at work, another one is scuffed because I made it two hours before the deadline! So naturally that one didn't get a lot of outsider playtesting, as my designated playtester already went to sleep. It's late here.<br>Anyways back to my, uh, story.<br>I started making some decent progress during the last week, getting about halfway through the map and thinking up some new ideas for the rest, but then I didn't get a whole lot done nearing the weekend. Saturday I worked 'till one at night, and Sunday I went to the city with a friend, to do something, I wouldn't say questionable, but it's certainly not something you do every day.<br>Also on my way there I got hit by a f*cking (small) truck while cycling like <span class=\"RedColor\"><b>BAM&nbsp;</b></span><i>I'm sent flying, for a moment I can see my own heartbeat, my bones are breaking mid-air, and outside of my body. Moments later I'm bleeding dry on the pavement.</i><br>(It wasn't really that bad, I only got a cut on my leg 'cause I kinda just fell over after the truck hit my back wheel, which'll probably leave a scar, but hey I collect those like stamps nowadays. Also my phone got some new cracks but they look sorta interesting so I f*ck with it. It's a secret just for the internet to know.)<br>I did some more work in the evening I think, I was semi-drunk (that's not a thing is it). And then today (Sunday(and/well now Monday)) (wait no that's monday, now tuesday) I finished up, speedran two rooms, played the Aiframe Ultra Beta, cried, didn't actually cry that's a lie, Celeste you can't hurt me, placed so many tiles, deco'ed, added custom ambience which didn't loop properly even after making it loop properly so I had to make it fade in and out.<br>Oh yes I cannot forget, my good business partner&nbsp;<a href=\"https://gamebanana.com/members/1774829\">PotatoLucy</a> made a really amazing piece of (pixel-)art for the map! I cannot thank her enough for this.<br>I think I'm close to everything I wanted to say.<br><hr><a href=\"https://www.youtube.com/watch?v=shw8fXrKtXw&amp;list=PLnMZ1ymt2vGRSmqdRzGHfW2kmzQEo76hd&amp;index=26\" target=\"_blank\">Oh yeah about the song of course! I don't actually know a whole lot about it, I checked out a translation of the lyrics once to see if there was anything relevant I should keep in mind.<br>I originally heard it at home on this compilation LP by this label it was released under I suppose. I don't know what the remaster is about/for, I don't know who made it, I'll just link it <b><del>here</del>&nbsp;everywhere&nbsp;</b>and you'll figure it out yourself (if you'd wanna). This yellow text hurts my eyes.</a><br><br>And the map of course, features:<br><ul><li>five or six gameplay rooms</li><li>some 'I-don't-wanna-call-it-advanced-so-I'll-say-expert' \"ridg\" type gameplay, for the fans</li><li>two whole berries</li></ul><br>Let me check my notes now.<br><br>Some special thanks:<br>- <i>Fortress Fall by Aspar @ Strawberry Jam</i> for being the main inspiration for the gameplay.<br>- <i>\"Jitter\" paint.net plugin by 'Pyrochild'</i> for helping make the sick sun reflection on the ocean.<br>- <i><a href=\"https://pixabay.com/sound-effects/ocean-waves-250310/\" target=\"_blank\">This</a> </i>and <a href=\"https://pixabay.com/sound-effects/seagull-sound-effect-272695/\" target=\"_blank\"><i>This</i></a> for the ambience.<br>- <i>Compound</i>, a friend (I think) of mine, for uh, no reason at all.<br>- <i><a href=\"https://gamebanana.com/members/1774829\">PotatoLucy</a></i> obviously for playtesting, moral support, the big custom art, and some ideas/motivation for the last room.<br>- And <i>last</i> but not <i>least</i>, <i>Nyan </i>and <i>Touhoe </i>for once again hosting this amazing contest, much love.<br>- <i class=\"SelectedElement\">Poor Richard</i><br>- <i>Niesmand</i><br><hr>Lovely, now that that's over I want to go to sleep, please leave me be!<br><br>11th mod on this website, ⚀ ⚀ Snake Eyes!<br><br>...Also it's an MTC3 map, I somehow forgot to mention that anywhere on this page.",
     false,
-    1731294095,
-    [],
-    [],
-    false,
-    0,
-    "https://gamebanana.com/mods/download/554942",
-    "https://gamebanana.com/mods/edit/554942",
-    "https://gamebanana.com/mods/embeddables/554942",
-    "https://gamebanana.com/mods/admin/history/554942",
-    "https://gamebanana.com/mods/554942",
-    "https://gamebanana.com/mods/admin/trash/554942",
-    "https://gamebanana.com/mods/admin/untrash/554942",
-    "https://gamebanana.com/mods/updates/554942",
-    "https://gamebanana.com/mods/admin/withhold/554942",
-    2718177,
-    1551,
+    1746981404,
+    [
+        {
+            "_sTitle": "\"I was busy this week playing my IRL Walking Sim.\"",
+            "_aChangeLog": [
+                {
+                    "text": "minor deco fixes",
+                    "cat": "Adjustment"
+                },
+                {
+                    "text": "more \"de-cheese\" than I'd have liked in the final room",
+                    "cat": "Improvement"
+                },
+                {
+                    "text": "added green refills in final room and room before final room",
+                    "cat": "Addition"
+                },
+                {
+                    "text": "got rid of some clutter files",
+                    "cat": "Optimization"
+                },
+                {
+                    "text": "removed one line of dialogue",
+                    "cat": "Removal"
+                },
+                {
+                    "text": "(v1.1.1) made it so you can't refill your dash after hitting the dash block in the second to last room (as intended)",
+                    "cat": "Tweak"
+                },
+                {
+                    "text": "(v1.1.1) placed an extra spike at the bottom of the same room as above to improve readability",
+                    "cat": "Amendment"
+                }
+            ],
+            "_sText": "<p>Old version is still up, in the case that's necessary for the judges.</p>",
+            "_tsDateAdded": 1746981404,
+            "_sVersion": "1.0.1 + 1.1.1"
+        }
+    ],
+    [
+        {
+            "_sTitle": "\"I was busy this week playing my IRL Walking Sim.\"",
+            "_aChangeLog": [
+                {
+                    "text": "minor deco fixes",
+                    "cat": "Adjustment"
+                },
+                {
+                    "text": "more \"de-cheese\" than I'd have liked in the final room",
+                    "cat": "Improvement"
+                },
+                {
+                    "text": "added green refills in final room and room before final room",
+                    "cat": "Addition"
+                },
+                {
+                    "text": "got rid of some clutter files",
+                    "cat": "Optimization"
+                },
+                {
+                    "text": "removed one line of dialogue",
+                    "cat": "Removal"
+                },
+                {
+                    "text": "(v1.1.1) made it so you can't refill your dash after hitting the dash block in the second to last room (as intended)",
+                    "cat": "Tweak"
+                },
+                {
+                    "text": "(v1.1.1) placed an extra spike at the bottom of the same room as above to improve readability",
+                    "cat": "Amendment"
+                }
+            ],
+            "_sText": "<p>Old version is still up, in the case that's necessary for the judges.</p>",
+            "_tsDateAdded": 1746981404,
+            "_sVersion": "1.0.1 + 1.1.1"
+        }
+    ],
+    true,
+    1,
+    "https://gamebanana.com/mods/download/592773",
+    "https://gamebanana.com/mods/edit/592773",
+    "https://gamebanana.com/mods/embeddables/592773",
+    "https://gamebanana.com/mods/admin/history/592773",
+    "https://gamebanana.com/mods/592773",
+    "https://gamebanana.com/mods/admin/trash/592773",
+    "https://gamebanana.com/mods/admin/untrash/592773",
+    "https://gamebanana.com/mods/updates/592773",
+    "https://gamebanana.com/mods/admin/withhold/592773",
+    1764672,
+    831,
     false
 ]

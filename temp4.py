@@ -15,6 +15,9 @@ write maximum 3 line
 MODEL = "benevolentjoker/nsfwvanessa"
 
 print(prompt)
+response = ollama_send_message(MODEL, prompt)
+print(response)
+
 while True:
     response = ollama_send_message(MODEL, prompt)
     print(response)

@@ -1,4 +1,4 @@
-import speech_recognition as sr
+#import speech_recognition as sr
 from pydub import AudioSegment
 from pydub.playback import play
 import winsound

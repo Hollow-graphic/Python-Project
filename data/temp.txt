@@ -1,0 +1,525 @@
+function ss_c1_e16_2()
+{
+    return (function()
+    {
+        __CoroutineBegin(function()
+        {
+        });
+        __CoroutineAwait(function()
+        {
+            return load_textures_async("tg_scene_e16");
+        });
+        __CoroutineThen(function()
+        {
+            o_cutsceneConductor.location = "Saturday's Bedroom";
+            o_cutsceneConductor.time = "9:14 PM";
+            o_cutsceneConductor.date = "November 15th, 2022";
+            play_bgm(bgs_story_interior_room);
+            create_textbox();
+            set_tint_color(0);
+            sat = create_portrait_object(270, 140, sat_neutral, false, 0.12);
+            alli = create_portrait_object(-120, 160, alli_yawn, true, 0.133);
+            o_bg.sprite_index = bg_wm_bedroom;
+            name_set("Allison");
+            text("HhhHHhHHHh");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.move(90, 0, 60, false);
+            name_set("");
+            text("I looked up from my phone as Allison walked into the room, slumped over. She walked over and faceplanted onto the bed I was sitting on. I looked at her inquisitively.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_speak);
+            name_set("Saturday");
+            text("What's got you all tuckered out?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_neutral, false);
+            alli.move(alli.x, 190, 30, false);
+            name_set("Allison");
+            text("Mmmf.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.move(240, 0, 30, false);
+            name_set("");
+            text("I leaned over and poked her hair.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_smile);
+            name_set("Saturday");
+            text("Sit up, Alli. I can't make out a word you're saying.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.move(alli.x, 160, 30, false);
+            name_set("");
+            text("Allison sat up.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_talking);
+            name_set("Allison");
+            text("Packing. The same thing we've been doing all day.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_neutral);
+            name_set("Saturday");
+            text("Well, speak for yourself. I finished up pretty early, actually.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hd_talking);
+            name_set("Allison");
+            text("Yeah, because you don't have anything to pack... all your stuff is still back at home on the island.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_frown);
+            name_set("Saturday");
+            text("Hey, don't fault me for being lightweight to travel! I don't need much to get by. You're the one that had, like, everything shipped from Tanegashima.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hd_neutral);
+            name_set("");
+            text("Allison glared at me with an unserious, tired expression.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Yeah, and I've realized now how bad of an idea that was. Because now I have to get it all shipped back.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_happy);
+            name_set("Saturday");
+            text("Such is the struggle with a temporary home.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hu_talking);
+            name_set("Allison");
+            text("Sure is. How about you? You already packed everything up?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_neutral);
+            name_set("Saturday");
+            text("Yeah, did it this afternoon. Didn't really take too long, like I said.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hu_neutral);
+            name_set("Allison");
+            text("Maybe I should loosen up a little. I'm admittedly a little envious of your single carry-on suitcase.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_happy_2);
+            name_set("Saturday");
+            text("Ha! Well, it certainly makes traveling easier. But I'd be lying if I said I didn't miss my home back on Tanegashima. So, take that as you will.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hu_smug);
+            name_set("Allison");
+            text("-chuckles- Fair enough.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("");
+            text("Just then, a rather tall silhouette appeared in the doorway.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_smile);
+            name_set("Saturday");
+            text("Hey, Kotomi! What's up?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            kot = create_portrait_object(-80, 140, kot_au_smile, true, 0.13);
+            alli.move(150, 160, 60, true);
+            alli.change(alli_hu_neutral, false);
+            kot.move(10, 140, 60, false);
+            name_set("");
+            text("Kotomi walked into the room.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Kotomi");
+            text("Nothing much, just making sure you're both ready to be up early tomorrow for the taxi to the airport. Everything all ready?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_happy);
+            name_set("Saturday");
+            text("Yup!");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            kot.change(kot_au_cloudy);
+            name_set("Kotomi");
+            text("...I know you're ready, Sat. I was mainly talking to Allison.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hd_talking);
+            name_set("Allison");
+            text("Yeah, I just finished up. All the stuff that's getting shipped back is in the boxes by the front door, and my suitcases are in my room.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            kot.change(kot_hh_neutral);
+            name_set("Kotomi");
+            text("Cool cool, Eri and I also just finished packing. Don't stay up too late! We've gotta be up at 8 AM sharp tomorrow.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_smile);
+            name_set("Saturday");
+            text("You got it!");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            kot.move(-140, 0, 60, true);
+            name_set("");
+            text("Kotomi left the room and closed the door behind her, leaving Allison and I in the light of the dim desktop lamp on the dresser.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.flip(true);
+            name_set("");
+            text("Allison looked over at my phone in my hand.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("What were you doing?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_neutral);
+            name_set("");
+            text("I turned on the phone to reveal the game I'd been playing.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("Putting in some of the grind on NOIZS SUNLIVHT. Trying to clear that Chapter 5 update that just came out.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_talking);
+            name_set("");
+            text("Allison gives a lighthearted chuckle.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Oh, I should've known.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("");
+            text("I felt a light impact against my side and looked over to see Allison resting her head on my shoulder. I gave her a teasing smile.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_smug);
+            name_set("Saturday");
+            text("You want to rest your head on my lap?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.move(120, 0, 30, false);
+            alli.change(alli_bash);
+            name_set("");
+            text("Allison moved away from me, flustered.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Whuh?! I- I mean, I wasn't- I just, was like,");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            sat.change(sat_happy);
+            name_set("Saturday");
+            text("You want to rest your head on my lap.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("");
+            text("Allison buried her face in her knees.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            alli.change(alli_hd_bash);
+            name_set("Allison");
+            text("yeah,");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            fade_tint(0, 1, 60);
+            name_set("");
+            text("I put my legs down off the bed and let Allison lay down on my lap. I looked down at her, still flustered, with her eyes closed.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            cg = instance_create_layer(0, 0, "Tint", o_cg_e16);
+            cg.length = room_speed * 120;
+            cg.i = 1;
+            
+            with (cg)
+                TweenEasyMove(0, 0, 0, -40, 30, length, EaseOutQuad);
+            
+            fade_tint(1, 0, 60);
+            name_set("Saturday");
+            text("Hey, hey... you can't fall asleep there, you know...");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("you can't stop me");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            cg.i = 4;
+            name_set("Saturday");
+            text("I can revoke your lap privileges.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("but you won't");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("");
+            text("I laughed softly.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            cg.i = 1;
+            name_set("Saturday");
+            text("Yeah, you're right. I guess you're the sleeping beauty then, huh?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            cg.i = 2;
+            name_set("");
+            text("Allison opened her eyes.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("If that makes you my prince, I'd say I got pretty lucky.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("I...");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("`c{think}why is this girl the literal cutest human being alive");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Oh. Was that too far? Uh, sorry...");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("No, no, it's okay! I was just... not ready for that!");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("");
+            text("An awkwardly long silence passes.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            cg.i = 3;
+            name_set("Saturday");
+            text("Hey, I wanted to ask... are you... okay? You've seemed kinda out of it all day.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            cg.i = 4;
+            name_set("Allison");
+            text("I guess you do know me too well for that to go unnoticed, huh...");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text(" I guess it's not so much that I'm out of it, and moreso that... it really feels like this time, short as it was, is coming to an end.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("It's been three months since the stuff that happened at the shrine, and I guess I just... got too used to things actually having calmed down.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("Because once we step foot in Tokyo, we're back in the case, and anything could happen. I'm scared. But, more selfishly, I'm going to miss these few months.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("Even if they weren't easy, it really felt like this was a major change in my life for the better, you know? Sorry. I shouldn't dump all of this on you...");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("Aw, Alli, it's okay. I understand completely.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("To be honest, I'm kinda in the same boat... my life already took such a monumental turn earlier in the year, and it really feels like we're about to take another one, doesn't it?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("But I think you and I both know this is something that we gotta do. It's not like either of us to go through all of that and just... walk away.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Yeah, I agree with you. But it's still scary, you know?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("Yeah, of course. But we're not facing this alone anymore. Neither of us are.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Ha... you're right as always. It's always going to be scary, but we'll press on anyway, right?");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("Always! That's just how we roll.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Allison");
+            text("Yeah.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            fade_tint(0, 1, 60);
+        });
+        __CoroutineDelay(function()
+        {
+            return 1000;
+        });
+        __CoroutineThen(function()
+        {
+            name_set("");
+            text("We went silent for a while before I inevitably had to get Allison off of my lap so I could move into bed.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            name_set("Saturday");
+            text("`c{think}Yeah... I'm not doing this because I want to be a hero. Looking back, it feels so foolish that I was worried about that.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("`c{think}It's been so long since all of this began, and it doesn't even feel like this is connected to Tsuki anymore... but I still need to see this through anyway.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            text("`c{think}And if there's something awful waiting for me at the end of this... I'll face it headfirst, together with those I love.");
+        });
+        __CoroutineAwait(check_textbox_done);
+        __CoroutineThen(function()
+        {
+            instance_destroy(obj_storyportrait);
+            audio_stop_sound(global.bgm);
+            instance_destroy(cg);
+            goto_scene(ss_c1_e16_3);
+        });
+        return __CoroutineEnd();
+    })();
+}

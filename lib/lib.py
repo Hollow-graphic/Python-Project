@@ -42,6 +42,14 @@ def under_space(string):
     return string
 def random_color():
     return "#{:06X}".format(random.randint(0, 0xFFFFFF))
+def print_dir(dir):
+    from pathlib import Path
+    files = [file.name for file in Path(dir).glob("*")]
+    char_list = ["├" for _ in range(len(files))]
+    char_list[0] = "┬"
+    char_list[-1] = "└"
+    for i, value in enumerate(files):
+        print(f"{char_list[i]}─{value}")
 #////////////////////////////#
 def get_windows():
     import win32gui
@@ -116,3 +124,11 @@ def ollama_send_message(MODEL, message):
     except Exception as e:
         print(f"An error occurred while sending message to Ollama: {e}")
         return None
+def say(string, model=""):
+    import pyttsx3
+    engine = pyttsx3.init()
+    engine.setProperty("volume", 1.0) # volume (0.0 à 1.0)
+    if model != "":
+        engine.setProperty("voice", model)
+    engine.say(string)
+    engine.runAndWait()

@@ -1,0 +1,7 @@
+items:
+    - filler: 5 skip
+
+check:
+    - Clear: X
+    - Full_clear: X
+    - Golden: X

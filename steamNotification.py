@@ -5,20 +5,43 @@ import json
 import os
 import math
 import yaml
+
 #Dont use emojis in the code, my font cant display them
 
 account_file = "data/account.txt"
 options_file = "data/options.yaml"
 slot_file = "data/slots.txt"
 agenda_file = "data/agenda.txt"
-account = open(account_file, "r").read().splitlines()
-Options = yaml.safe_load(open(options_file, "r"))
-SLOTS = open(slot_file, "r").read().splitlines()
-SERVER = account[2]
+
+
+def read_lines(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read().splitlines()
+
+
+def read_yaml(path):
+    if not os.path.exists(path):
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
+
+
+def safe_input(prompt):
+    try:
+        return input(prompt)
+    except (EOFError, KeyboardInterrupt):
+        return ""
+
+
+account = read_lines(account_file)
+Options = read_yaml(options_file)
+SLOTS = read_lines(slot_file)
+SERVER = account[2] if len(account) > 2 else ""
 has_agenda = False
 last_command = None
 
-pi = 3.141592653589793238462643383
 
 class MyClient(steam.Client):
     async def on_ready(self):
@@ -30,7 +53,9 @@ class MyClient(steam.Client):
         global SLOTS, SERVER, has_agenda, last_command
         loop = asyncio.get_event_loop()
         while True:
-            cmd = await loop.run_in_executor(None, input, "> ")
+            cmd = await loop.run_in_executor(None, safe_input, "> ")
+            if not cmd:
+                continue
             if cmd.startswith("/"):
                 cmd = cmd[1:]
             if cmd.startswith("archipelago"): #Achipelago commands
@@ -40,13 +65,15 @@ class MyClient(steam.Client):
                         print(f"Serveur actuel : {SERVER}")
                     else:
                         SERVER = parts[2]
-                        open(account_file, "w").write(f"{account[0]}\n{account[1]}\n{SERVER}\n{account[3]}")
-                        print(f"Serveur changé : {SERVER}")
+                    with open(account_file, "w", encoding="utf-8") as f:
+                        f.write(f"{account[0]}\n{account[1]}\n{SERVER}\n{account[3]}")
+                    print(f"Serveur changé : {SERVER}")
 
                 elif cmd.startswith("archipelago add "):
                     slot = cmd.split(" ", 2)[2]
                     SLOTS.append(slot)
-                    open(slot_file, "w").write("\n".join(SLOTS))
+                    with open(slot_file, "w", encoding="utf-8") as f:
+                        f.write("\n".join(SLOTS))
                     asyncio.create_task(self.listen_archipelago(slot))
                     print(f"Slot ajouté : {slot}")
 
@@ -54,7 +81,8 @@ class MyClient(steam.Client):
                     slot = cmd.split(" ", 2)[2]
                     if slot in SLOTS:
                         SLOTS.remove(slot)
-                        open(slot_file, "w").write("\n".join(SLOTS))
+                        with open(slot_file, "w", encoding="utf-8") as f:
+                            f.write("\n".join(SLOTS))
                         print(f"Slot supprimé : {slot} (sera déconnecté au prochain cycle)")
                     else:
                         print(f"Slot introuvable : {slot}")
@@ -80,7 +108,8 @@ class MyClient(steam.Client):
                     print(f"Erreur de calcul : {e}")
             elif cmd.startswith("agenda"):
                 if cmd.startswith("agenda add "):
-                    open(agenda_file, "a").write(cmd.split(" ", 2)[2] + "\n")
+                    with open(agenda_file, "a", encoding="utf-8") as f:
+                        f.write(cmd.split(" ", 2)[2] + "\n")
                     print("Agenda Updated")
                     has_agenda = True
                 elif cmd.startswith("agenda verify"):
@@ -101,7 +130,7 @@ class MyClient(steam.Client):
                 await self.close()
                 os._exit(0)
             elif cmd == "help":
-                if cmd == "help archipelago":
+                if cmd == "help archipelago" or "archipelago help" or "archipelago ?":
                     print("/archipelago server <adresse:port>  → changer le serveur")
                     print("/archipelago add <slot>             → ajouter un slot")
                     print("/archipelago remove <slot>          → supprimer un slot")

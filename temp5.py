@@ -28,11 +28,8 @@ chosen_mods_list = ["MCA", "Eidolon", "IntegratedDynamics"]
 banned_mods_list = ["Occultism","AE2", "Terralith", "ForbiddenAndArcanus", "ProjectE", "ImmersiveEngineering"]
 bonus_chosen_mods_list = ['ProjectMMO']
 
-chosen_mods_list = ['MCA', 'Eidolon', 'IntegratedDynamics', 'MysticalAgriculture', 'Create', 'OhTheBiomesYoullGo', 'Apotheosis', 'ArsNouveau', 'Mekanism', 'ThermalExpansion']
-bonus_chosen_mods_list = ['ProjectMMO', 'BiomesOPlenty', 'Explorify', 'UniqueAccessories']
-
-_skip_mods = True
-_load_mods = True
+_skip_mods = False
+_load_mods = False
 
 _print = True
 _load_all_mods = False
@@ -112,7 +109,8 @@ mods_list = {
         "BonsaiTree",
         "VanillaBackprot",
         "Malum",
-        "Identity"
+        "Identity",
+        "OtherworldArtifact",
     }
 }
   
@@ -148,8 +146,16 @@ def main():
     total_mods = sum([len(mods_list[i]) for i in mods_list])
     nb_mods = int(not _skip_mods) * sum([nb_mod_category[category][0] for category in mods_list]) + len(chosen_mods_list)
     integration_chosen_mods_list = []
-
-    if not _skip_mods:
+    
+    if _load_all_mods:
+        for mods in chosen_mods_list[:]:
+            chosen_mods_list.remove(mods)
+        for category in list(mods_list.keys()):
+            for mods in mods_list[category]:
+                if mods not in chosen_mods_list:
+                    chosen_mods_list.append(mods)
+        
+    if not _skip_mods and not _load_all_mods:
         for category in mods_list:
             if nb_mod_category[category][0] > len(mods_list[category]):
                 exit(f"ERROR: nb_{category}_mod is above the mods in {category}")

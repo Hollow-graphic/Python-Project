@@ -1,0 +1,1 @@
+start cmd.exe /k "cloudflared tunnel --url http://localhost:5173"

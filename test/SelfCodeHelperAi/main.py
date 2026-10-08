@@ -40,6 +40,7 @@ def analyze_code(code):
     # Add more sophisticated checks here as needed (e.g., variable types, function signatures)
     return True  # Placeholder -  Expand this
 
+
 def chat_with_assistant(prompt):
     """Simulates a conversation with the AI assistant."""
     print("\n--- Chat with the Assistant ---")
@@ -65,17 +66,14 @@ def chat_with_assistant(prompt):
         print(f"An error occurred during the chat: {e}")
         return None
 
-"""
+
 def main():
-    "Main function to orchestrate the process."
+    """Main function to orchestrate the process."""
     code = load_code(FILE_NAME)
+    chat_with_assistant(code)
     if code:
         if analyze_code(code):
             print("Code is OK!")
-            if "Bug detected" in content:
-                print("Bug detected!  Please review the error messages.")
-            else:
-                print("Code is fine.")
 
             # Example of saving the code
             save_code(code, FILE_NAME)
@@ -87,4 +85,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-"""

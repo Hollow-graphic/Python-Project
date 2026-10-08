@@ -90,7 +90,7 @@
   }
 </style>
 <script>
-  const chars = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789., :()/!&_ç?"%$#~-|{}+>=<[]@'`;
+  const chars = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789., :()/!&_ç?"%$#~-|{}+>=<[]@'éêèà`;
   const char_scale = 5.5;
 
   fetch('color.txt')
@@ -157,7 +157,7 @@
     })
     .then(async text => {
       text = text.replace(/^\uFEFF/, "").replace(/^\s+/, "");
-      await renderText(text, "message", 50); // 50ms entre chaque caractère
+      await renderText(text, "message", 45); // 50ms entre chaque caractère
     })
     .catch(err => console.error('Failed to load message.txt:', err));
 </script>

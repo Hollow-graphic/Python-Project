@@ -2,3 +2,7 @@
 /.vscode
 /__pycache__
 /assistant
+backup/gamebanana/dependencies.json
+/data/lol/match
+/data/lol/match_snapshot
+/build
