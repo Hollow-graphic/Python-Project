@@ -2,6 +2,7 @@ import obswebsocket
 import os
 import random
 import glob
+import time
 
 password = os.environ.get("OBS_PASSWORD")
 
@@ -92,8 +93,17 @@ for n in nerf:
                 }
             ))
 
+time.sleep(600)
+
+for n in nerfs:
+    if n in nerf:
+        ChangeFilterState(n, False)
+        
 ws.disconnect()
 
+
+
+exit()
 import win32gui
 import win32con
 
